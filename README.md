@@ -117,3 +117,18 @@ CREATE TABLE Admin (
     email VARCHAR(191) NOT NULL UNIQUE, 
     password VARCHAR(255) NOT NULL
 ); 
+```
+## Running the Application
+
+1. Open the project in NetBeans IDE.
+2. Ensure Hibernate is configured properly with your MySQL database (`hibernate.cfg.xml`).
+3. Build and run the project.
+4. The application will launch as a Java console application.
+
+## Development Environment
+
+- **IDE**: NetBeans IDE 8.2
+- **Database**: MySQL 8.2.0
+- **ORM Tool**: Hibernate
+
+

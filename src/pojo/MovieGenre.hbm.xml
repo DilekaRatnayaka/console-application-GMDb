@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 9, 2024 10:49:23 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.MovieGenre" table="movie_genre" catalog="gmdb" optimistic-lock="version">
+        <composite-id name="id" class="pojo.MovieGenreId">
+            <key-property name="movieId" type="int">
+                <column name="movie_id" />
+            </key-property>
+            <key-property name="genreId" type="int">
+                <column name="genre_id" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

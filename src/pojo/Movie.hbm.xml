@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 9, 2024 10:49:23 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.Movie" table="movie" catalog="gmdb" optimistic-lock="version">
+        <id name="movieId" type="java.lang.Integer">
+            <column name="movie_id" />
+            <generator class="identity" />
+        </id>
+        <property name="movieName" type="string">
+            <column name="movie_name" not-null="true" />
+        </property>
+        <property name="director" type="string">
+            <column name="director" />
+        </property>
+        <property name="actors" type="string">
+            <column name="actors" length="65535" />
+        </property>
+        <property name="runtime" type="java.lang.Integer">
+            <column name="runtime" />
+        </property>
+    </class>
+</hibernate-mapping>
+

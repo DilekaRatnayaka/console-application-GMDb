@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 9, 2024 10:49:23 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.Review" table="review" catalog="gmdb" optimistic-lock="version">
+        <id name="reviewId" type="java.lang.Integer">
+            <column name="review_id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="java.lang.Integer">
+            <column name="user_id" />
+        </property>
+        <property name="movieId" type="java.lang.Integer">
+            <column name="movie_id" />
+        </property>
+        <property name="rating" type="java.lang.Integer">
+            <column name="rating" />
+        </property>
+        <property name="reviewDescription" type="string">
+            <column name="review_description" length="65535" />
+        </property>
+        <property name="reviewDate" type="timestamp">
+            <column name="review_date" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>
